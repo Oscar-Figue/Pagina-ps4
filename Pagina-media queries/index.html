@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina Gaming</title>
+</head>
+        <header>
+    <div class="container">
+            <div class="navbar">
+            <img src="./Img/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li> <a href="">Joyistcks</a></li>
+                    <li> <a href="">Accesorios VR</a></li>
+                    <li> <a href="">Controles remotos Multimedia</a></li>
+                    <li> <a href="">Otros</a></li>
+                </ul>
+            </nav>
+            <img src="./Img/menu.png" class="menu-icon" onclick="Togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br>Dualshock</h2>
+                <h3>Control Inalámbrico para PlayStation 4</h3>
+                <h4>$49.999,00</h4>
+                <button type="button">Comprar <img src="./Img/arrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="./Img/controller.png" class="control">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                <img src="./Img/add.png">
+                <p> <small>Añadir al carro</small></p>
+                </div>  
+            </div>
+            <script>
+                var menulist = document.getElementById("menulist");
+                menulist.style.maxHeight = "0px";
+                function Togglemenu (){
+                    if (menulist.style.maxHeight == "0px")
+                    {
+                        menulist.style.maxHeight ="130px";
+                    }
+                    else 
+                    {
+                        menulist.style.maxHeight ="0px";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <div class="redes-sociales">
+        <img src="./Img/fb.png">
+        <img src="./Img/tw.png">
+        <img src="./Img/ig.png">
+    </div>
+        </header>
+</body>
+    <div class="container2"></div>
+</body>
+</html>
